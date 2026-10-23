@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Shader FPS Test</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="fps">FPS: --</div>
+  
+<div id="stats">
+  <div id="frameTime">FRAME TIME: -- ms</div>
+  <canvas id="fpsGraph"></canvas>
+  <div id="graphLabel">FPS HISTORY</div>
+</div>
+
+
+  <button
+    id="menuButton"
+    type="button"
+    aria-label="Open menu"
+    aria-expanded="false"
+  >☰</button>
+
+  <div id="menu" hidden>
+    <div class="credit">
+      Make by longdogzDev/<br>
+      chatgpt
+    </div>
+
+    <div id="qualityOptions">
+      <button type="button" data-quality="0">Ultimate High</button>
+      <button type="button" data-quality="1">Ultra High</button>
+      <button type="button" data-quality="2">High</button>
+      <button type="button" data-quality="3">Mid to High</button>
+      <button type="button" data-quality="4">Mid</button>
+      <button type="button" data-quality="5">Low to Mid</button>
+      <button type="button" data-quality="6">Low</button>
+      <button type="button" data-quality="7">Potato</button>
+    </div>
+  </div>
+
+  <main id="scene">
+    <canvas id="shaderCanvas"></canvas>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
